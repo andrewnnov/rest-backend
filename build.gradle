@@ -22,11 +22,12 @@ repositories {
 }
 
 dependencies {
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation ('org.springframework.boot:spring-boot-starter-test',
-			'io.rest-assured:rest-assured:4.5.1')
+			'io.rest-assured:rest-assured:5.2.1')
 }
 
 tasks.named('test') {
